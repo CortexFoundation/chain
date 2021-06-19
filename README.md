@@ -1,13 +1,13 @@
 # chain
-## It is simple enough for new bird to learn blockchain.
+## It's simple enough for new bird to learn blockchain.
 ```
 go run cmd/main.go
 ```
 ### Boot nodes
 ```
-$ go run blockchain.go -p 5001
-$ go run blockchain.go -p 5002
-$ go run blockchain.go -p 5003
+$ go run cmd/main.go -p 5001
+$ go run cmd/main.go -p 5002
+$ go run cmd/main.go -p 5003
 ```
 ### Chain info
 ```
@@ -19,7 +19,7 @@ $ curl -X POST -H "Content-Type: application/json" -d '{
 "nodes": ["http://localhost:5001","http://localhost:5002"]
 }' localhost:5000/nodes/register
 ```
-### New tx
+### New transaction
 ```
 $ curl -X POST -H "Content-Type: application/json" -d '{
 "sender": "96884cb7d98646128c25d03782a9e269",
